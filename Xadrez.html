@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <!-- LOCAL -->
+    <title>XADREZ</title>
+    <link rel="icon" type="image/x-icon" href="data:image/png;base64,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">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,100;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- React Online -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+
+    <div class="col center">
+        <h1 class="TextBlock">XADREZ</h1>
+        <h4 class="titulo" title="Feito por: Gabi, Thalia e Barbára" style="margin-top: -40px;"><b>Feito por: Gabi,
+                Lucas e Barbára</b></h4>
+    </div>
+
+    <div id="root"></div>
+    <script type="text/babel">
+
+        function Botao1(props) {
+            let texto = props.texto;
+            let nome = props.nome;
+            return (
+                <button class="Preto" onClick={() => alert('Você clicou no ' + nome + ' ' + texto)}><b>{texto}</b></button>
+            );
+        }
+
+        function Botao2(props) {
+            let texto = props.texto;
+            let nome = props.nome;
+            return (
+                <button class="Branco" onClick={() => alert('Você clicou no ' + nome + ' ' + texto)}><b>{texto}</b></button>
+            );
+        }
+
+        function Branco(props) {
+            return (<table cellspacing="0">
+                <tr>
+                    <td><Botao1 nome="Peão Branco" texto="&#9817;" /></td>
+                    <td><Botao2 nome="Peão Branco" texto="&#9817;" /></td>
+                    <td><Botao1 nome="Peão Branco" texto="&#9817;" /></td>
+                    <td><Botao2 nome="Peão Branco" texto="&#9817;" /></td>
+                    <td><Botao1 nome="Peão Branco" texto="&#9817;" /></td>
+                    <td><Botao2 nome="Peão Branco" texto="&#9817;" /></td>
+                    <td><Botao1 nome="Peão Branco" texto="&#9817;" /></td>
+                    <td><Botao2 nome="Peão Branco" texto="&#9817;" /></td>
+                </tr>
+                <tr>
+                    <td><Botao2 nome="Torre Branco" texto="&#9814;" /></td>
+                    <td><Botao1 nome="Cavalo Branco" texto="&#9816;" /></td>
+                    <td><Botao2 nome="Bispo Branco" texto="&#9815;" /></td>
+                    <td><Botao1 nome="Dama Branco" texto="&#9813;" /></td>
+                    <td><Botao2 nome="Rei Branco" texto="&#9812;" /></td>
+                    <td><Botao1 nome="Bispo Branco" texto="&#9815;" /></td>
+                    <td><Botao2 nome="Cavalo Branco" texto="&#9816;" /></td>
+                    <td><Botao1 nome="Torre Branco" texto="&#9814;" /></td>
+                </tr>
+            </table>);
+        }
+
+        function Preto(props) {
+            return (<table cellspacing="0">
+                <tr>
+                    <td><Botao1 nome="Torre Preto" texto="&#9820;" /></td>
+                    <td><Botao2 nome="Cavalo Preto" texto="&#9822;" /></td>
+                    <td><Botao1 nome="Bispo Preto" texto="&#9821;" /></td>
+                    <td><Botao2 nome="Dama Preto" texto="&#9819;" /></td>
+                    <td><Botao1 nome="Rei Preto" texto="&#9818;" /></td>
+                    <td><Botao2 nome="Bispo Preto" texto="&#9821;" /></td>
+                    <td><Botao1 nome="Cavalo Preto" texto="&#9822;" /></td>
+                    <td><Botao2 nome="Torre Preto" texto="&#9820;" /></td>
+                </tr>
+                <tr>
+                    <td><Botao2 nome="Peão Preto" texto="&#9823;" /></td>
+                    <td><Botao1 nome="Peão Preto" texto="&#9823;" /></td>
+                    <td><Botao2 nome="Peão Preto" texto="&#9823;" /></td>
+                    <td><Botao1 nome="Peão Preto" texto="&#9823;" /></td>
+                    <td><Botao2 nome="Peão Preto" texto="&#9823;" /></td>
+                    <td><Botao1 nome="Peão Preto" texto="&#9823;" /></td>
+                    <td><Botao2 nome="Peão Preto" texto="&#9823;" /></td>
+                    <td><Botao1 nome="Peão Preto" texto="&#9823;" /></td>
+                </tr>
+            </table>);
+        }
+
+        function TabuleiroCampos(props) {
+            return (<table cellspacing="0">
+                <tr>
+                    <td><Botao1 nome="Vazio" texto="  " /></td>
+                    <td><Botao2 nome="Vazio" texto="  " /></td>
+                    <td><Botao1 nome="Vazio" texto="  " /></td>
+                    <td><Botao2 nome="Vazio" texto="  " /></td>
+                    <td><Botao1 nome="Vazio" texto="  " /></td>
+                    <td><Botao2 nome="Vazio" texto="  " /></td>
+                    <td><Botao1 nome="Vazio" texto="  " /></td>
+                    <td><Botao2 nome="Vazio" texto="  " /></td>
+                </tr>
+                <tr>
+                    <td><Botao2 nome="Vazio" texto="  " /></td>
+                    <td><Botao1 nome="Vazio" texto="  " /></td>
+                    <td><Botao2 nome="Vazio" texto="  " /></td>
+                    <td><Botao1 nome="Vazio" texto="  " /></td>
+                    <td><Botao2 nome="Vazio" texto="  " /></td>
+                    <td><Botao1 nome="Vazio" texto="  " /></td>
+                    <td><Botao2 nome="Vazio" texto="  " /></td>
+                    <td><Botao1 nome="Vazio" texto="  " /></td>
+                </tr>
+            </table>);
+        }
+
+        function Tabuleiro(props) {
+            return (<>
+                <div class="col center">
+                    <div class="tabuleiroBlock">
+                        <Preto />
+                        <TabuleiroCampos />
+                        <TabuleiroCampos />
+                        <Branco />
+                    </div>
+                </div>
+            </>);
+        }
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<Tabuleiro />);
+
+    </script>
+</body>
+
+</html>

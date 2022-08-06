@@ -1,0 +1,89 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #151515;
+}
+
+body {
+    background-color: #454545;
+}
+
+button {
+    border: none;
+    width: 60px;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+    font-size: 26px;
+}
+
+table, tr, td{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.Preto{
+    background-color: #c5c5c5;
+}
+
+.Branco{
+    background-color: #f5f5f5;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+.roboto {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    color: #151515;
+}
+
+.roboto400 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #151515;
+}
+
+.titulo {
+    border-radius: 6px;
+    padding: 5px;
+    z-index: 1;
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 31px 7px rgba(20, 20, 20, 0.69);
+    box-shadow: 0px 0px 31px 7px rgba(20, 20, 20, 0.69);
+}
+
+.tabuleiroBlock{
+    width: 480px;
+    height: 480px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0px 0px 31px 7px rgba(20, 20, 20, 0.69);
+    box-shadow: 0px 0px 31px 7px rgba(20, 20, 20, 0.69);
+}
+
+.TextBlock {
+    font-size: 64px; 
+    margin-top: -10px; 
+    z-index: 2;
+    color: #FFFFFF;    
+    text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 
+    0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px
+     rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px
+     rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px
+     rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px
+     rgba(0, 0, 0, .15);
+}
