@@ -35,93 +35,95 @@
     <div id="root"></div>
     <script type="text/babel">
 
-        function Botao1(props) {
+        function Botao(props) {
             let texto = props.texto;
             let nome = props.nome;
-            return (
-                <button class="Preto" onClick={() => alert('Você clicou no ' + nome + ' ' + texto)}><b>{texto}</b></button>
-            );
-        }
+            let classe = props.classe;
 
-        function Botao2(props) {
-            let texto = props.texto;
-            let nome = props.nome;
+            /*const estilo = {cursor: "context-menu"}
+            
+            if (nome !== "vazio") { 
+                estilo = { cursor: "pointer" } 
+            }*/
+
+            const estilo = { cursor: "pointer" } 
+            
             return (
-                <button class="Branco" onClick={() => alert('Você clicou no ' + nome + ' ' + texto)}><b>{texto}</b></button>
+                <button class={classe} style={estilo} onClick={() => alert('Você clicou no ' + nome + ' ' + texto)}><b>{texto}</b></button>
             );
         }
 
         function Branco(props) {
-            return (<table cellspacing="0">
+            return (<table cellSpacing="0">
                 <tr>
-                    <td><Botao1 nome="Peão Branco" texto="&#9817;" /></td>
-                    <td><Botao2 nome="Peão Branco" texto="&#9817;" /></td>
-                    <td><Botao1 nome="Peão Branco" texto="&#9817;" /></td>
-                    <td><Botao2 nome="Peão Branco" texto="&#9817;" /></td>
-                    <td><Botao1 nome="Peão Branco" texto="&#9817;" /></td>
-                    <td><Botao2 nome="Peão Branco" texto="&#9817;" /></td>
-                    <td><Botao1 nome="Peão Branco" texto="&#9817;" /></td>
-                    <td><Botao2 nome="Peão Branco" texto="&#9817;" /></td>
+                    <td><Botao classe="Preto" nome="Peão Branco" texto="&#9817;" /></td>
+                    <td><Botao classe="Branco" nome="Peão Branco" texto="&#9817;" /></td>
+                    <td><Botao classe="Preto" nome="Peão Branco" texto="&#9817;" /></td>
+                    <td><Botao classe="Branco" nome="Peão Branco" texto="&#9817;" /></td>
+                    <td><Botao classe="Preto" nome="Peão Branco" texto="&#9817;" /></td>
+                    <td><Botao classe="Branco" nome="Peão Branco" texto="&#9817;" /></td>
+                    <td><Botao classe="Preto" nome="Peão Branco" texto="&#9817;" /></td>
+                    <td><Botao classe="Branco" nome="Peão Branco" texto="&#9817;" /></td>
                 </tr>
                 <tr>
-                    <td><Botao2 nome="Torre Branco" texto="&#9814;" /></td>
-                    <td><Botao1 nome="Cavalo Branco" texto="&#9816;" /></td>
-                    <td><Botao2 nome="Bispo Branco" texto="&#9815;" /></td>
-                    <td><Botao1 nome="Dama Branco" texto="&#9813;" /></td>
-                    <td><Botao2 nome="Rei Branco" texto="&#9812;" /></td>
-                    <td><Botao1 nome="Bispo Branco" texto="&#9815;" /></td>
-                    <td><Botao2 nome="Cavalo Branco" texto="&#9816;" /></td>
-                    <td><Botao1 nome="Torre Branco" texto="&#9814;" /></td>
+                    <td><Botao classe="Branco" nome="Torre Branco" texto="&#9814;" /></td>
+                    <td><Botao classe="Preto" nome="Cavalo Branco" texto="&#9816;" /></td>
+                    <td><Botao classe="Branco" nome="Bispo Branco" texto="&#9815;" /></td>
+                    <td><Botao classe="Preto" nome="Dama Branco" texto="&#9813;" /></td>
+                    <td><Botao classe="Branco" nome="Rei Branco" texto="&#9812;" /></td>
+                    <td><Botao classe="Preto" nome="Bispo Branco" texto="&#9815;" /></td>
+                    <td><Botao classe="Branco" nome="Cavalo Branco" texto="&#9816;" /></td>
+                    <td><Botao classe="Preto" nome="Torre Branco" texto="&#9814;" /></td>
                 </tr>
             </table>);
         }
 
         function Preto(props) {
-            return (<table cellspacing="0">
+            return (<table cellSpacing="0">
                 <tr>
-                    <td><Botao1 nome="Torre Preto" texto="&#9820;" /></td>
-                    <td><Botao2 nome="Cavalo Preto" texto="&#9822;" /></td>
-                    <td><Botao1 nome="Bispo Preto" texto="&#9821;" /></td>
-                    <td><Botao2 nome="Dama Preto" texto="&#9819;" /></td>
-                    <td><Botao1 nome="Rei Preto" texto="&#9818;" /></td>
-                    <td><Botao2 nome="Bispo Preto" texto="&#9821;" /></td>
-                    <td><Botao1 nome="Cavalo Preto" texto="&#9822;" /></td>
-                    <td><Botao2 nome="Torre Preto" texto="&#9820;" /></td>
+                    <td><Botao classe="Preto" nome="Torre Preto" texto="&#9820;" /></td>
+                    <td><Botao classe="Branco" nome="Cavalo Preto" texto="&#9822;" /></td>
+                    <td><Botao classe="Preto" nome="Bispo Preto" texto="&#9821;" /></td>
+                    <td><Botao classe="Branco" nome="Dama Preto" texto="&#9819;" /></td>
+                    <td><Botao classe="Preto" nome="Rei Preto" texto="&#9818;" /></td>
+                    <td><Botao classe="Branco" nome="Bispo Preto" texto="&#9821;" /></td>
+                    <td><Botao classe="Preto" nome="Cavalo Preto" texto="&#9822;" /></td>
+                    <td><Botao classe="Branco" nome="Torre Preto" texto="&#9820;" /></td>
                 </tr>
                 <tr>
-                    <td><Botao2 nome="Peão Preto" texto="&#9823;" /></td>
-                    <td><Botao1 nome="Peão Preto" texto="&#9823;" /></td>
-                    <td><Botao2 nome="Peão Preto" texto="&#9823;" /></td>
-                    <td><Botao1 nome="Peão Preto" texto="&#9823;" /></td>
-                    <td><Botao2 nome="Peão Preto" texto="&#9823;" /></td>
-                    <td><Botao1 nome="Peão Preto" texto="&#9823;" /></td>
-                    <td><Botao2 nome="Peão Preto" texto="&#9823;" /></td>
-                    <td><Botao1 nome="Peão Preto" texto="&#9823;" /></td>
+                    <td><Botao classe="Branco" nome="Peão Preto" texto="&#9823;" /></td>
+                    <td><Botao classe="Preto" nome="Peão Preto" texto="&#9823;" /></td>
+                    <td><Botao classe="Branco" nome="Peão Preto" texto="&#9823;" /></td>
+                    <td><Botao classe="Preto" nome="Peão Preto" texto="&#9823;" /></td>
+                    <td><Botao classe="Branco" nome="Peão Preto" texto="&#9823;" /></td>
+                    <td><Botao classe="Preto" nome="Peão Preto" texto="&#9823;" /></td>
+                    <td><Botao classe="Branco" nome="Peão Preto" texto="&#9823;" /></td>
+                    <td><Botao classe="Preto" nome="Peão Preto" texto="&#9823;" /></td>
                 </tr>
             </table>);
         }
 
         function TabuleiroCampos(props) {
-            return (<table cellspacing="0">
+            return (<table cellSpacing="0">
                 <tr>
-                    <td><Botao1 nome="Vazio" texto="  " /></td>
-                    <td><Botao2 nome="Vazio" texto="  " /></td>
-                    <td><Botao1 nome="Vazio" texto="  " /></td>
-                    <td><Botao2 nome="Vazio" texto="  " /></td>
-                    <td><Botao1 nome="Vazio" texto="  " /></td>
-                    <td><Botao2 nome="Vazio" texto="  " /></td>
-                    <td><Botao1 nome="Vazio" texto="  " /></td>
-                    <td><Botao2 nome="Vazio" texto="  " /></td>
+                    <td><Botao classe="Preto" nome="Vazio" texto="  " /></td>
+                    <td><Botao classe="Branco" nome="Vazio" texto="  " /></td>
+                    <td><Botao classe="Preto" nome="Vazio" texto="  " /></td>
+                    <td><Botao classe="Branco" nome="Vazio" texto="  " /></td>
+                    <td><Botao classe="Preto" nome="Vazio" texto="  " /></td>
+                    <td><Botao classe="Branco" nome="Vazio" texto="  " /></td>
+                    <td><Botao classe="Preto" nome="Vazio" texto="  " /></td>
+                    <td><Botao classe="Branco" nome="Vazio" texto="  " /></td>
                 </tr>
                 <tr>
-                    <td><Botao2 nome="Vazio" texto="  " /></td>
-                    <td><Botao1 nome="Vazio" texto="  " /></td>
-                    <td><Botao2 nome="Vazio" texto="  " /></td>
-                    <td><Botao1 nome="Vazio" texto="  " /></td>
-                    <td><Botao2 nome="Vazio" texto="  " /></td>
-                    <td><Botao1 nome="Vazio" texto="  " /></td>
-                    <td><Botao2 nome="Vazio" texto="  " /></td>
-                    <td><Botao1 nome="Vazio" texto="  " /></td>
+                    <td><Botao classe="Branco" nome="Vazio" texto="  " /></td>
+                    <td><Botao classe="Preto" nome="Vazio" texto="  " /></td>
+                    <td><Botao classe="Branco" nome="Vazio" texto="  " /></td>
+                    <td><Botao classe="Preto" nome="Vazio" texto="  " /></td>
+                    <td><Botao classe="Branco" nome="Vazio" texto="  " /></td>
+                    <td><Botao classe="Preto" nome="Vazio" texto="  " /></td>
+                    <td><Botao classe="Branco" nome="Vazio" texto="  " /></td>
+                    <td><Botao classe="Preto" nome="Vazio" texto="  " /></td>
                 </tr>
             </table>);
         }
