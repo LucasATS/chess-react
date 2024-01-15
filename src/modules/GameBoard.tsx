@@ -1,9 +1,9 @@
 import { GithubIcon } from 'lucide-react';
-import Branco from '../components/Branco';
-import Preto from '../components/Preto';
-import TabuleiroCampos from '../components/TabuleiroCampos';
+import BlackPart from '../components/BlackPart';
+import FieldBoard from '../components/FieldBoard';
+import WhitePart from '../components/WhitePart';
 
-const Tabuleiro = () => {
+const GameBoard = () => {
   return (
     <div className="flex flex-col gap-10">
       <a
@@ -25,13 +25,13 @@ const Tabuleiro = () => {
         </div>
       </div>
       <div className="w-auto h-auto shadow-custom">
-        <Preto />
-        <TabuleiroCampos />
-        <TabuleiroCampos />
-        <Branco />
+        <BlackPart />
+        <FieldBoard />
+        <FieldBoard />
+        <WhitePart />
       </div>
     </div>
   );
 };
 
-export default Tabuleiro;
+export default GameBoard;
