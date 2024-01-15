@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .default {
+    @apply bg-default text-white;
+  }
+
+  .default:hover {
+    @apply hover:bg-default text-white hover:bg-opacity-90;
+  }
+
+  .primary {
+    @apply bg-primary text-white;
+  }
+
+  .primary:hover {
+    @apply hover:bg-primary text-white hover:bg-opacity-90;
+  }
+
+  .secondary {
+    @apply bg-secondary text-white;
+  }
+
+  .secondary:hover {
+    @apply bg-secondary text-white hover:bg-opacity-90;
+  }
+
+  .tertiary {
+    @apply tertiary;
+  }
+
+  .tertiary:hover {
+    @apply tertiary text-opacity-80;
+  }
+
+  .quaternary {
+    @apply text-quaternary;
+  }
+
+  .quaternary:hover {
+    @apply text-quaternary text-opacity-80;
+  }
+}
+
+html,
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: default;
+}
+
+@media only screen and (orientation: portrait) {
+  .github-img {
+    width: 60px !important;
+  }
+}
+
+.github-img {
+  width: 60px;
+  border-radius: 360px;
+}
