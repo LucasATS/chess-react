@@ -2,57 +2,57 @@ import Botao from './Botao';
 
 const TabuleiroCampos = () => {
   return (
-    <table cellSpacing="0">
+    <table className="w-auto h-auto">
       <tr>
         <td>
-          <Botao className="bg-tertiary" name="Vazio" texto="  " />
+          <Botao className="bg-tertiary" name="Vazio" />
         </td>
         <td>
-          <Botao className="bg-quaternary" name="Vazio" texto="  " />
+          <Botao className="bg-quaternary" name="Vazio" />
         </td>
         <td>
-          <Botao className="bg-tertiary" name="Vazio" texto="  " />
+          <Botao className="bg-tertiary" name="Vazio" />
         </td>
         <td>
-          <Botao className="bg-quaternary" name="Vazio" texto="  " />
+          <Botao className="bg-quaternary" name="Vazio" />
         </td>
         <td>
-          <Botao className="bg-tertiary" name="Vazio" texto="  " />
+          <Botao className="bg-tertiary" name="Vazio" />
         </td>
         <td>
-          <Botao className="bg-quaternary" name="Vazio" texto="  " />
+          <Botao className="bg-quaternary" name="Vazio" />
         </td>
         <td>
-          <Botao className="bg-tertiary" name="Vazio" texto="  " />
+          <Botao className="bg-tertiary" name="Vazio" />
         </td>
         <td>
-          <Botao className="bg-quaternary" name="Vazio" texto="  " />
+          <Botao className="bg-quaternary" name="Vazio" />
         </td>
       </tr>
       <tr>
         <td>
-          <Botao className="bg-quaternary" name="Vazio" texto="  " />
+          <Botao className="bg-quaternary" name="Vazio" />
         </td>
         <td>
-          <Botao className="bg-tertiary" name="Vazio" texto="  " />
+          <Botao className="bg-tertiary" name="Vazio" />
         </td>
         <td>
-          <Botao className="bg-quaternary" name="Vazio" texto="  " />
+          <Botao className="bg-quaternary" name="Vazio" />
         </td>
         <td>
-          <Botao className="bg-tertiary" name="Vazio" texto="  " />
+          <Botao className="bg-tertiary" name="Vazio" />
         </td>
         <td>
-          <Botao className="bg-quaternary" name="Vazio" texto="  " />
+          <Botao className="bg-quaternary" name="Vazio" />
         </td>
         <td>
-          <Botao className="bg-tertiary" name="Vazio" texto="  " />
+          <Botao className="bg-tertiary" name="Vazio" />
         </td>
         <td>
-          <Botao className="bg-quaternary" name="Vazio" texto="  " />
+          <Botao className="bg-quaternary" name="Vazio" />
         </td>
         <td>
-          <Botao className="bg-tertiary" name="Vazio" texto="  " />
+          <Botao className="bg-tertiary" name="Vazio" />
         </td>
       </tr>
     </table>

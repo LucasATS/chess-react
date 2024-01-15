@@ -5,7 +5,7 @@ import TabuleiroCampos from '../components/TabuleiroCampos';
 
 const Tabuleiro = () => {
   return (
-    <div className="flex flex-col mt-10 gap-10">
+    <div className="flex flex-col gap-10">
       <a
         title="Visite nossa página no github"
         href="https://github.com/LucasATS/xadrez"

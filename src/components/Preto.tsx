@@ -2,10 +2,10 @@ import Botao from './Botao';
 
 const Preto = () => {
   return (
-    <table cellSpacing="0">
+    <table className="w-auto h-auto">
       <tr>
         <td>
-          <Botao className="bg-tertiary" name="Torre Preto" texto="&#9820;" />
+          <Botao className="bg-tertiary" name="Torre Preto" texto="&#9821;" />
         </td>
         <td>
           <Botao className="bg-quaternary" name="Cavalo Preto" texto="&#9822;" />
